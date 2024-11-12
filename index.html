@@ -1,0 +1,406 @@
+<title>Landmine Detection at F&M</title>
+
+<link rel="stylesheet" href="pulsars.css" type="text/css">
+
+<h1>Landmine Detection at F&M</h1>  
+
+<p>
+
+<font size=2>
+
+<b>Hackman Room 212</b>
+
+<p>
+
+
+<img height=160 src=./Picture1.png>
+<img height=160 src=./Picture2.jpg>
+<img height=160 src=./Picture3.jpg>
+
+
+
+<p>
+
+<br>
+
+
+<b><u>Introduction</u></b>
+
+<p>
+The detection and removal of landmines and other unexploded ordnance
+in current and former conflict zones is a major humanitarian task that
+can be leveraged by the use of technology to address the complexities
+and difficulties in correctly identifying mines. The vast majority of
+a deminer's time is spent identifying and removing inert underground
+clutter.  Sophisticated identification and imaging of underground
+objects (whether they be landmines or junk; either plastic or metal)
+can reduce this wasted time and mitigate the physical danger to the
+deminer. This demining technology comes in multiple forms and needs to
+work together in a single system to be maximally effective. This
+technology includes imaging (with LIDAR-enabled cameras for
+landscapes, and with holographic radars for underground objects),
+ground-penetrating radar for buried object detection, robotics and field
+mobility assessments, real-time communication between different parts
+of the overall system, user databases that are populated in real-time
+with field data and which are accessible worldwide, wireless data
+transfer and communication between robots, sensors, users, and
+databases, and interfaces between users and the instrumentation.
+
+<p>
+
+With rapid advances in commercial technology, the costs are reduced
+while the reliability and capability are increased (these are important
+considerations since cost, ease of use, and reliability are important
+for the end users of the technology in typically poor and/or
+underdeveloped conflict zones). Real-world conditions also dictate
+that the technology be field-ready and simple to use in order to be
+practical as a tool. These developments and the requirements of the
+overall problem point to an integrated technology approach, where
+cyber and physical systems communicate, merge, and integrate into a
+single, connected, decentralized system that is simple, cheap, and
+reliable.
+
+
+<p>
+
+<img height=200 src=./pma2_mine_small.jpg>
+<img height=200 src=./landmine_2018.jpg>
+<img height=200 src=./dli_lidar_sandbox1_small.jpg>
+<img height=200 src=./jackal_group_hartman5_small.jpg>
+
+<p>
+<p>
+
+<br>
+
+
+<b><u>Our Work</u></b>
+
+<p>
+
+Our research group at F&M has been working in tandem with colleagues
+from Italy, Ukraine, and Jordan as a
+<a href=http://www.natospsdeminingrobots.com/>NATO-funded team</a> to
+enhance and integrate existing and proven technology and the
+techniques that have been developed to address demining in the Ukraine
+conflict zone of
+<a href=https://en.wikipedia.org/wiki/Donbass>Donbass</a>. The team
+has been successful in testing object detection and identification
+techniques with ground penetrating radars and metal detectors,
+automating identification of both above-ground threats (tripwires) and
+surface threats (surface-scattered mines), and with terrain analysis
+in the Ukraine conflict zone. The integration of these various aspects
+of the system and others in progress.
+
+<p>
+
+<img height=200 src=./md/md_setup.png>
+<img height=200 src=./md/md_heatmap_vs50_0.png border=1>
+<img height=200 src=./testbed_3.jpg> 
+
+<p>
+
+
+<b><a href=./md_heatmaps.html>Click to see our metal detector measurements
+of landmines.</a></b>
+
+<p>
+
+<b><a href=./tripwires.html>Click to see our experimental real-time
+tripwire detection results in the field.</a></b>
+
+<p>
+
+Our work at F&M focuses on several aspects of the system
+development. These include:
+
+
+<font size=2> 
+
+<ul>
+    
+<li> LIDAR imaging and creation of digital elevation models (DEMs) for
+the terrain in the Ukraine conflict zone, and how the robot can use
+these for navigation and movement decisions. This is necessary because
+the terrain is generally uneven with lots of obstacles, which can
+block the robot or get it stuck in the minefield.
+
+<p>
+
+<li> Acquiring accurate cm-scale real-time mapping of the ground in
+the vicinity of the robot. This is necessary to correct the
+holographic radar images for the non-planar ground-air interface
+through which the radar signal propagates. This requires accurate
+registration between the DEM of the terrain and the coordinate system
+of the holographic radar system.
+
+<p>
+
+<li> Developing a matched filtering approach for using LIDAR images to
+accurately detect and identify PMA-2 ("starfish") landmines in the
+terrain. These mines can have the starfish trigger sticking out above
+the ground and are therefore in principle detectable with cameras.
+
+<p>
+
+
+<li> Investigating (and implementing) automated tripwire detection
+(detection of wires through real-time imaging of wires) using
+experiments with different infrared, visible, and LIDAR cameras and
+with different wire configurations, wire types, and distances from the
+camera.
+
+<p>
+
+<li> Using Ukraine terrain data and DEM maps to assess robot
+maneuverability in Ukraine mine fields.
+
+<p>
+
+<li> Determining the fraction of area that is suitable for the
+selected robot design and ensuring readiness for real-field conditions
+to maximize the usefulness of the robot by local operators.
+
+<p>
+
+<li> Field testing Fisher M-101 and F-75 commercial metal detectors
+using a variety of landmine and clutter types, and mechanically
+integrating the sensors into the robotic platform.
+
+<p>
+
+<li> Design and implementation of a database for real-time storage of
+position coordinates and auxiliary information from the robot via
+GPS. This is needed to identify locations of possible explosive
+objects prior to disposal.
+
+<p>
+
+<li> Implementation of automated navigation of the robots along a
+predefined path with GPS waypoints for a complete area survey of a
+test minefield.
+
+<p>
+
+<li> Setup of a test minefield with (inert) landmine simulants to
+assess how well we can identify and distinguish buried 
+landmines and buried harmless clutter of different kinds. 
+
+</ul>
+
+
+
+<p>
+<p>
+
+<font size=2>
+
+<br>
+
+<b><u>Project Leaders at F&M</u></b>
+
+<p>
+
+<ul>
+
+<img src=./bechtel1.jpg border=1 height=200>
+
+<img src=./crawford1.jpg border=1 height=200>
+
+<p>
+
+
+
+<li> <a href=https://www.fandm.edu/timothy-bechtel>Tim Bechtel</a> (Senior Teaching Professor of Geosciences, 
+Department of Earth and Environment)
+
+<li> <a href=http://venus.fandm.edu/~fcrawfor>Fronefield Crawford</a> (Charles A. Dana Professor of Physics 
+and Astronomy, Department of Physics and Astronomy)
+
+</ul>
+
+<p>
+<p>
+
+<font size=2> 
+
+<br>
+
+<b><u>Current and Former Team Members at F&M</u></b>
+
+<ul>
+
+<li> Timilehin Adefioye (F&M '26)
+<li> Joey Buck (F&M '24)
+<li> Liyan Chen (F&M '28)
+<li> Cameron Crawford (American '23) 
+<li> Gavi Fischer (F&M '25) 
+<li> Aaron DiGregorio (F&M '22)
+<li> Youssef El Gharably (F&M '26)
+<li> Alaa Abo El-Magd (F&M '26)
+<li> Ileane Ho (F&M '20)
+<li> Adem Imamovic (F&M '22) 
+<li> Stasia Kuske (F&M '19)
+<li> Andrew Lara (F&M '24) 
+<li> Kelvin Lartey (F&M '27)
+<li> David Li (F&M '24) 
+<li> Erik Lillegard (F&M '23) 
+<li> Ziyu Mo (F&M '23) 
+<li> Roselyn Ovalles (F&M '26)
+<li> Lily Rodriguez (F&M '26) 
+<li> Gaby Sallai (F&M '19)
+<li> Ethan Senatore (F&M '24) 
+<li> Inna Shapovalenko (F&M '26) 
+<li> Nina Simic (F&M '15)
+<li> Jack Sinton (F&M '20)
+<li> Alex Sobey-Strick (F&M '23) 
+<li> Liv Young (F&M '23) 
+<li> Yihao Zhang (F&M '23)
+<li> Dani Zoeller (F&M '23) 
+
+</ul>
+
+
+<p>
+<p>
+
+<font size=2> 
+
+<br>
+
+<b><u>Background Reading (for New Students)</u></b>
+
+<p>
+
+<font size=2>
+
+<ul>
+
+<li>
+<a href=https://drive.google.com/file/d/1245uYSH4daiC30AByFBvjzgOoqtFviSA/view?usp=sharing>Alternatives
+for Landmine Detection</a> (RAND Science and Technology Policy
+Institute) [F&M access only] 
+
+<li> <a href=https://drive.google.com/drive/folders/1LVK3j3ghhurdzHOjGZARtHWRMUAq8I-M?usp=sharing>Operating Manuals for the Clearpath Jackal</a> [F&M access only] 
+
+
+
+</ul>
+
+<p>
+<p>
+
+<font size=2> 
+
+<br>
+
+
+
+<b><u>News Articles, Press, and Other</u></b>
+
+<p>
+
+<font size=2>
+
+<ul>
+
+<li>
+<a href=https://youtu.be/zQ9vsDeEfns>NATO-Backed F&M Building Robots 
+to Detect Landmines</a>, Franklin and Marshall College Youtube Video, 
+January 26, 2024
+
+<li>
+<a href=https://clearpathrobotics.com/blog/2023/10/demining-robots-jackal-ugv-outdoornav-utilized-for-advanced-landmine-detection/>
+Demining Robots: Jackal UGV and OutdoorNav Utilized for Advanced
+Landmine Detection</a>,
+In the Field: Customer Spotlight, Clearpath Robotics, October 16, 2023
+
+<li> <a href=https://www.fandm.edu/stories/nato-professors-demining-robots.html>NATO Humanitarian Demining Robot Tested at F&M</a>,
+F&M News, August 31, 2023 
+
+<li> <a href=https://www.fandm.edu/stories/students-help-program-robots-for-dangerous-mission-in-ukraine.html>Students Help Program Robots for Dangerous Mission in Ukraine</a>,
+F&M News, July 19, 2022 
+
+<li>
+<a href=https://www.fox43.com/article/news/local/lancaster-professors-in-limbo-as-ukraine-crisis-puts-landmine-research-on-pause-shaquilleomari-russia-ukrainecrisis-landmines-franklinandmarshall-mine/521-90c42de4-4cd0-4170-8653-dca37cc768fb>Lancaster
+Professors' Project in Limbo as Ukraine Crisis Puts Landmine Research
+on Pause</a>, WPMT FOX43 News, February 27, 2022
+
+<li>
+<a href=https://lancasteronline.com/news/local/f-m-professors-research-on-ukraine-landmine-removal-faces-uncertain-future/article_a7d66b76-95da-11ec-9d2d-63a3c9187145.html>F&M
+Professors' Research on Ukraine Landmine Removal Faces Uncertain
+Future</a>, LNP Lancaster Online, February 25, 2022
+
+<li> <a href=https://vimeo.com/560540473>Landmine Detection at F&M: 
+A Cyber-Physical Connected
+Systems Approach to Landmine Detection and Reversing the Legacy of
+War</a> - <a href=https://vimeo.com/showcase/7248308>F&M Faculty 
+Features Series</a>, June 3, 2021 
+
+<li> <a href=http://venus.fandm.edu/~fcrawfor/ps/Land_Mines_rev_9.pdf>The Slow-Motion Pandemic: Land Mines</a>, Op Ed for 
+International Mine Awareness Day, 2021
+
+<li> <a href=https://www.nato.int/cps/en/natohq/news_180760.htm>NATO Science Presents: The Robot That Goes First</a>, NATO Science Series, January 20, 2021
+
+<li> <a href=https://sites.google.com/fandm.edu/2020autumnresearchfair/natural-sciences?authuser=0#h.284zesa7vcgk>F&M virtual research fair video 
+presentation</a>  
+of demining work at F&M presented by Aaron DiGregorio '21 in October 2020. 
+
+<li> <a href=https://www.nato.int/nato_static_fl2014/assets/pdf/2020/9/pdf/200922-demining-robots-flyer-en.pdf>Brochure for NATO SPS Project G5731: Multi-Sensor Cooperative Robots for Shallow Buried Explosive Threat Detection - DEMINING ROBOTS</a>
+
+<li> <a href=https://www.fandm.edu/news/latest-news/2020/07/13/student-researcher-teaches-robots-to-navigate-minefields>Student-Researcher Teaches Robots to Navigate Minefields</a>, F&M News, July 13, 2020 
+
+<li> <a href=https://youtu.be/Qd41gx-Z4Fk>Time lapse video of the UGO 1st field 
+demo at the 2018 NATO Advanced Resarch Workshop in Florence, Italy</a>
+
+<li> <a href=https://www.nato.int/cps/en/natohq/news_160271.htm>New NATO
+Scientific Projects to Help with the Fight Against Terrorism</a>,
+NATO Headquarters News, November 12, 2018
+
+<li> <a href=https://www.fandm.edu/news/latest-news/2018/07/16/building-a-robot-with-lasers-flight-of-time-cameras-and-coding>Building a Robot with Lasers, Time-of-Flight Cameras and Coding</a>, F&M News, July 16, 2018
+
+<li> <a href=https://www.fandm.edu/news/latest-news/2018/05/02/ready-to-launch-f-m-helps-develop-land-mine-detection-robot>Ready to Launch: F&M Helps Develop Land Mine-Detection Robot</a>, F&M News, May 2, 2018
+
+</ul>
+
+<p>
+<p>
+
+<font size=2> 
+
+<br>
+
+<b><u>Project Funding</u></b>
+
+<p>
+
+<font size=2> 
+
+This work has been funded in part by the following projects from the
+<a href=http://www.nato.int/science> NATO Science for Peace and
+Security Programme</a>:
+
+<p>
+
+<ul>
+
+<li> <a href=http://www.nato-sfps-landmines.eu>G5014: "Holographic and
+Impulse Subsurface Radar for Landmine and IED Detection"</a>
+
+
+<li> <a href=http://www.natospsdeminingrobots.com/>G5731: "Multi-Sensor Cooperative Robots for Shallow Buried
+Explosive Threat Detection - DEMINING ROBOTS"</a>
+
+<li> G7563: "Innovative Sensor Integration for Remote Landmine Detection"
+
+
+</ul>
+
+<p>
+
+
+
+</font>
+
+
+
