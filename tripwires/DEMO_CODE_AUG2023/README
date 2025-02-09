@@ -1,0 +1,26 @@
+After boot: 
+
+1: connect to pi remotely, ssh into the pi 
+2. run vnc on pi using: vncserver -Authentication VncAuth (take note of the :number)
+
+3. on remote machine: vncviewer -shared -via pi@192.168.1.117 raspberry:1 (match this last :number) 
+
+
+4. Plug in the camera,
+5. Make sure it is set to A+ mode (rotate switch on the top of the camera)
+6. Turn camera on (camera should NOT mount) 
+
+In the VNC, on the pi: 
+
+7. Open a new terminal and type: cd tripwire  
+8. type: ./COMMAND.camera0 (to initialize gphoto2) 
+9. type: ./COMMAND.camera1 (to run gphoto2, may have to change video0 at end of command) 
+
+10. Open a new terminal and type: cd tripwire
+11. type: ./COMMAND.camera2 (to run Maksym's main.py code) 
+
+At end:
+
+12. Turn camera off
+13. On pi, type: vncserver -kill :1 (match the :number)  
+

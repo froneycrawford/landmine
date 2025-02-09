@@ -1,0 +1,28 @@
+For running from linux/MAC with X-windows: 
+
+1. Boot the pi 
+4. Plug in the camera,
+5. Make sure it is set to A+ mode (rotate switch on the top of the camera)
+6. Turn camera on (camera should NOT mount)
+
+From remote machine: 
+
+1: ssh -Y pi@192.168.1.117 into the pi 
+
+2. in pi window, xterm& (twice) to call up two pi terminal windows 
+
+3. In one of the pi windows:
+cd tripwire
+./COMMAND.camera0 (to initialize gphoto2)
+./COMMAND.camera1 (to run gphoto2)
+
+4. In the other pi window: 
+cd tripwire
+./COMMAND.camera2 (to run Maksym's main.py code)
+
+At end:
+
+12. Turn camera off
+13. Logout of the pi windows.
+
+
